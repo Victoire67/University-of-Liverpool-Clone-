@@ -1,1 +1,14 @@
 @import "tailwindcss";
+.img-bg {
+  background: url("images/homePageBg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.small-bg {
+  background: url("images/smallBg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.triangle {
+  clip-path: polygon(100% 100%, 0% 0%, 0% 100%);
+}

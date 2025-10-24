@@ -5,10 +5,705 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>university-of-liverpool</title>
+  <script src="https://kit.fontawesome.com/53a1123324.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="src/style.css">
 </head>
 
-<body>
+<body class="img-bg small-bg w-full text-white p-4">
+  <div class="fixed sm:top-[90%] sm:right-[95%] right-[83.7%] top-[91%] bg-blue-950 h-16 aspect-square flex items-center place-content-center triangle">
+    <i class="fa-solid fa-cookie-bite relative top-3 right-4"></i>
+  </div>
+  <header class="sm:flex hidden w-full place-content-between my-4">
+
+    <img class="w-1/5 filter brightness-0 invert hidden sm:flex" src="src/images/ul-logo.svg" alt="university-of-liverpool">
+
+    <nav>
+      <ul class="sm:flex hidden gap-4">
+        <li class="hover:underline cursor-pointer">News</li>
+        <li class="hover:underline cursor-pointer">Jobs</li>
+        <li class="hover:underline cursor-pointer">Donate</li>
+        <li class="hover:underline cursor-pointer">A-Z</li>
+        <li class="hover:underline cursor-pointer">Alumni</li>
+        <li class="hover:underline cursor-pointer">Staff</li>
+        <li class="hover:underline cursor-pointer">Students</li>
+
+      </ul>
+    </nav>
+  </header>
+  <header class="flex place-content-between mb-24">
+       <img class="sm:hidden w-1/2 filter brightness-0 invert" src="src/images/ul-logo.svg" alt="university-of-liverpool">
+    <nav>
+      <ul id="nav" class="sm:flex gap-4 font-bold hidden">
+        <li class="hover:underline hover:underline-offset-16 px-2 cursor-pointer active:outline-1 active:to-blue-500">
+          Study<i class="fa-solid fa-angle-down ml-2"></i></li>
+        <li class="hover:underline hover:underline-offset-16 px-2 cursor-pointer active:outline-1 active:to-blue-500">
+          Student life<i class="fa-solid fa-angle-down ml-2"></i></li>
+        <li class="hover:underline hover:underline-offset-16 px-2 cursor-pointer active:outline-1 active:to-blue-500">
+          Research and Inovation<i class="fa-solid fa-angle-down ml-2"></i></li>
+        <li class="hover:underline hover:underline-offset-16 px-2 cursor-pointer active:outline-1 active:to-blue-500">
+          Global<i class="fa-solid fa-angle-down ml-2"></i></li>
+        <li class="hover:underline hover:underline-offset-16 px-2 cursor-pointer active:outline-1 active:to-blue-500">
+          About Us<i class="fa-solid fa-angle-down ml-2"></i></li>
+      </ul>
+    </nav>
+
+    <div class="active:outline-2 p-2 gap-8 flex items-center">
+      <i class="fa-solid fa-magnifying-glass" ></i>
+       <input class="outline-none border-none hidden sm:flex sm:relative " type="text" placeholder="Search the site" aria-readonly="readonly">
+       <i class="flex sm:hidden  sm:fa-solid sm:fa-bars text-2xl"></i>
+    </div>
+  </header>
+  <dialog id="nav-description" class="w-full bg-white h-12 border-none outline-none">
+    <div>
+      <div id="student" class="w-full text-blue-950 hidden bg-white">
+        <header class="flex w-full place-content-between">
+          <h1 class="font-bold text-blue-950 text-4xl">Study<i class="fa-solid fa-angle-right ml-2"></i></h1>
+          <button>X Close</button>
+        </header>
+        <div class="w-8/10 flex place-content-between mt-8 text-lg ">
+
+          <table>
+            <thead class="font-bold">
+              <tr>
+                <td>View all Courses <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+            </thead>
+
+            <tbody class="grid gap-3 py-2">
+              <tr>
+                <td>Undergraduate</td>
+              </tr>
+              <tr>
+                <td>Postgraduate tought</td>
+              </tr>
+              <tr>
+                <td>postgraduate research</td>
+              </tr>
+              <tr>
+                <td>Continuing education</td>
+              </tr>
+              <tr>
+                <td>Continuing proffesional development</td>
+              </tr>
+              <tr>
+                <td>Online studies</td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <thead class="font-bold">
+              <tr>
+                <td>International <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+            </thead>
+
+            <tbody class="grid gap-3 py-2">
+              <tr>
+                <td>Global opportunities</td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+              <tr class="font-bold">
+                <td>XJTD <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+              <tr>
+                <td>The XJTD partnership</td>
+              </tr>
+
+            </tbody>
+          </table>
+          <table>
+            <thead class="font-bold">
+              <tr>
+                <td>Paying for your studies <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+            </thead>
+
+            <tbody class="grid gap-3 py-2">
+              <tr>
+                <td>Tuition fees</td>
+              </tr>
+              <tr>
+                <td>Scholarships and bursaries</td>
+              </tr>
+              <tr>
+                <td>Loans and grants</td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+              <tr class="font-bold">
+                <td>Graduation <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+              <tr class="font-bold">
+                <td>Widening participation <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+
+            </tbody>
+          </table>
+          <table>
+            <thead class="font-bold">
+              <tr>
+                <td>Visit us <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+            </thead>
+
+            <tbody class="grid gap-3 py-2">
+              <tr>
+                <td>In-person</td>
+              </tr>
+              <tr>
+                <td>Online</td>
+              </tr>
+              <tr>
+                <td>Virtual tour</td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+              <tr class="font-bold">
+                <td>Contact us <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+              <tr>
+                <td>Term date and semesters </td>
+              </tr>
+
+            </tbody>
+          </table>
+
+
+
+
+
+        </div>
+      </div>
+      <div id="student-life" class="w-full text-blue-950 hidden bg-white">
+        <header class="flex w-full place-content-between">
+          <h1 class="font-bold text-blue-950 text-4xl">Student life<i class="fa-solid fa-angle-right ml-2"></i></h1>
+          <button>X Close</button>
+        </header>
+        <div class="w-8/10 flex place-content-between mt-8 text-lg ">
+
+          <table>
+            <thead class="font-bold">
+              <tr>
+                <td>Life on campus <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+            </thead>
+
+            <tbody class="grid gap-3 py-2">
+              <tr>
+                <td>Facilities</td>
+              </tr>
+              <tr>
+                <td>Library</td>
+              </tr>
+              <tr>
+                <td>Food and drink</td>
+              </tr>
+              <tr>
+                <td>Events</td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <thead class="font-bold">
+              <tr>
+                <td>Life in liverpool <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+            </thead>
+
+            <tbody class="grid gap-3 py-2">
+              <tr>
+                <td>Why choose Liverpool?</td>
+              </tr>
+              <tr>
+                <td>Getting to Liverpool</td>
+              </tr>
+              <tr>
+                <td>Getting around Liverpool</td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+              <tr class="font-bold">
+                <td>Accomodation <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+              <tr>
+                <td>Find accomodation</td>
+              </tr>
+              <tr>
+                <td>Life in halls</td>
+              </tr>
+
+            </tbody>
+          </table>
+          <table>
+            <thead class="font-bold">
+              <tr>
+                <td>Guild of Students <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+            </thead>
+
+            <tbody class="grid gap-3 py-2">
+              <tr class="font-bold">
+                <td>Sport at Liverpool <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+              <tr class="font-bold">
+                <td>Student support<i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+              <tr>
+                <td>Mental health and wellbeing</td>
+              </tr>
+              <tr>
+                <td>Visas and immigration</td>
+              </tr>
+              <tr>
+                <td>Book an appointment</td>
+              </tr>
+
+
+            </tbody>
+          </table>
+          <table>
+            <thead class="font-bold">
+              <tr>
+                <td>Careers <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+            </thead>
+
+            <tbody class="grid gap-3 py-2">
+              <tr class="font-bold">
+                <td>Welcome week <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+              <tr class="font-bold">
+                <td>Money Advice<i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+              <tr>
+                <td>Managing your money</td>
+              </tr>
+
+
+
+            </tbody>
+          </table>
+
+
+
+
+
+        </div>
+      </div>
+      <div id="research" class="w-full text-blue-950 hidden bg-white">
+        <header class="flex w-full place-content-between">
+          <h1 class="font-bold text-blue-950 text-4xl">Research and innovation<i
+              class="fa-solid fa-angle-right ml-2"></i></h1>
+          <button>X Close</button>
+        </header>
+        <div class="w-8/10 flex place-content-between flex-1 mt-8 text-lg gap-4">
+
+          <table class="w-1/4">
+            <thead class="font-bold">
+              <tr>
+                <td>Research frontiers <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+            </thead>
+
+            <tbody class="grid gap-3 py-2">
+              <tr>
+                <td>AI for life</td>
+              </tr>
+              <tr>
+                <td>Infection resilience</td>
+              </tr>
+              <tr>
+                <td>Materials discovered</td>
+              </tr>
+              <tr>
+                <td>Partical physics</td>
+              </tr>
+              <tr>
+                <td>Theurapeutics innovation</td>
+              </tr>
+              <tr class="font-bold">
+                <td>Interdisciplinary Center for Susstenability Research <i class="fa-solid fa-angle-right ml-2"></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="w-1/4">
+            <thead class="font-bold">
+              <tr>
+                <td>Business Collaboration <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+            </thead>
+
+            <tbody class="grid gap-3 py-2">
+              <tr>
+                <td>Collaboration and partenerships</td>
+              </tr>
+              <tr>
+                <td>Enterprise: Collaborate with us</td>
+              </tr>
+              <tr>
+                <td>Consultancy</td>
+              </tr>
+              <tr>
+                <td>Contact us/td>
+              </tr>
+              <tr class="font-bold">
+                <td>Facilities and equipment</td>
+              </tr>
+
+            </tbody>
+          </table>
+          <table class="w-1/4">
+            <thead class="font-bold">
+              <tr>
+                <td>Research groups <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+            </thead>
+
+            <tbody class="grid gap-3 py-2">
+              <tr>
+                <td>Find a researcher</td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+              <tr class="font-bold">
+                <td>Research Excellence framework (REF) <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+              <tr>
+                <td>Our impact</td>
+              </tr>
+              <tr class="font-bold">
+                <td>Postgraduate reserach<i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+              <tr>
+                <td>Doctoral Training</td>
+              </tr>
+
+
+
+            </tbody>
+          </table>
+          <table class="w-1/4">
+            <thead class="font-bold">
+              <tr>
+                <td>Fellowships <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+            </thead>
+
+            <tbody class="grid gap-3 py-2">
+              <tr class="font-bold">
+                <td>Research environment <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+              <tr class="font-bold">
+                <td>Research support<i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+
+              <tr class="font-bold">
+                <td>Research News<i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+
+              <tr>
+                <td>Original ideas podcast</td>
+              </tr>
+
+
+
+            </tbody>
+          </table>
+
+
+
+
+
+        </div>
+      </div>
+      <div id="global" class="w-full text-blue-950 hidden bg-white">
+        <header class="flex w-full place-content-between">
+          <h1 class="font-bold text-blue-950 text-4xl">Global liverpool<i class="fa-solid fa-angle-right ml-2"></i>
+          </h1>
+          <button>X Close</button>
+        </header>
+        <div class="w-8/10 flex place-content-between flex-1 mt-8 text-lg gap-4">
+
+          <table class="w-1/4">
+            <thead class="font-bold">
+              <tr>
+                <td>Partnerships <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+            </thead>
+
+            <tbody class="grid gap-3 py-2">
+              <tr>
+                <td>Strategic parteners</td>
+              </tr>
+              <tr>
+                <td>Global networks</td>
+              </tr>
+              <tr>
+                <td>Transnational education partners</td>
+              </tr>
+              <tr>
+                <td>Collaborate with us</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="w-1/4">
+            <thead class="font-bold">
+              <tr>
+                <td>Global study opportunities<i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+            </thead>
+
+            <tbody class="grid gap-3 py-2">
+              <tr>
+                <td>Study abroad</td>
+              </tr>
+              <tr>
+                <td>Study in Liverpool</td>
+              </tr>
+              <tr>
+                <td>Study in China</td>
+              </tr>
+              <tr>
+                <td> Study in India </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="w-1/4">
+            <thead class="font-bold">
+              <tr>
+                <td>Achievements and rankings <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+            </thead>
+
+            <tbody class="grid gap-3 py-2">
+              <tr class="font-bold">
+                <td>Our global city <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+              <tr class="font-bold">
+                <td>Sustenability<i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+
+
+
+
+            </tbody>
+          </table>
+          <table class="w-1/4">
+            <thead class="font-bold">
+              <tr>
+                <td>Our global team <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+            </thead>
+
+            <tbody class="grid gap-3 py-2">
+              <tr>
+                <td>Leadership team </td>
+              </tr>
+              <tr>
+                <td>Gloabl contacts</td>
+              </tr>
+
+              <tr>
+                <td>Our Gloabl communnity</td>
+              </tr>
+
+              <tr>
+                <td>Original ideas podcast</td>
+              </tr>
+
+
+
+            </tbody>
+          </table>
+
+
+
+
+
+        </div>
+      </div>
+      <div id="about" class="w-full text-blue-950 hidden bg-white">
+        <header class="flex w-full place-content-between">
+          <h1 class="font-bold text-blue-950 text-4xl">About us<i class="fa-solid fa-angle-right ml-2"></i>
+          </h1>
+          <button>X Close</button>
+        </header>
+        <div class="w-8/10 flex place-content-between flex-1 mt-8 text-lg gap-4">
+
+          <table class="w-1/4">
+            <thead class="font-bold">
+              <tr>
+                <td>The university <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+            </thead>
+
+            <tbody class="grid gap-3 py-2">
+              <tr>
+                <td>Our history</td>
+              </tr>
+              <tr>
+                <td>Strategy and vision</td>
+              </tr>
+              <tr>
+                <td>People and culture</td>
+              </tr>
+              <tr>
+                <td>Rankings and reputation</td>
+              </tr>
+              <tr>
+                <td>Reports, policies and governance documents</td>
+              </tr>
+              <tr>
+                <td>Our structure</td>
+              </tr>
+              <tr>
+                <td>Work at Liverpool</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="w-1/4">
+            <thead class="font-bold">
+              <tr>
+                <td>Our city, our inspiration<i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+            </thead>
+
+            <tbody class="grid gap-3 py-2">
+              <tr>
+                <td>Discover Liverpool</td>
+              </tr>
+              <tr>
+                <td>Our commitment to the Liverpool city region</td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+              <tr class="font-bold">
+                <td> Professional Servies <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+              <tr>
+                <td>IT Services</td>
+              </tr>
+              <tr>
+                <td>Human Resources</td>
+              </tr>
+              <tr>
+                <td>Legal</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="w-1/4">
+            <thead class="font-bold">
+              <tr>
+                <td>Our campus <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+            </thead>
+
+            <tbody class="grid gap-3 py-2">
+              <tr>
+                <td>Campus Facilities</td>
+              </tr>
+              <tr>
+                <td>Libraries</td>
+              </tr>
+              <tr>
+                <td>Sport facilities</td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+              <tr class="font-bold">
+                <td>Sustenability<i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+              <tr class="font-bold">
+                <td>Equality diversity and inclution <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+              <tr class="font-bold">
+                <td>NEWS <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+
+
+
+
+            </tbody>
+          </table>
+          <table class="w-1/4">
+            <thead class="font-bold">
+              <tr>
+                <td>Events<i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+            </thead>
+
+            <tbody class="grid gap-3 py-2">
+              <tr>
+                <td>Hire an event space </td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>Visit us <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+
+              <tr>
+                <td>Museums and collections</td>
+              </tr>
+              <tr>
+                <td>Getting here</td>
+              </tr>
+              <tr>
+                <td>Maps</td>
+              </tr>
+              <tr>
+                <td>Car parking</td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+              <tr class="font-bold">
+                <td>Contact us <i class="fa-solid fa-angle-right ml-2"></i></td>
+              </tr>
+
+
+
+            </tbody>
+          </table>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </dialog>
+  <section class="sm:w-1/2 w-full mt-50 sm:mt-24">
+    <h1 class="border-4 border-white sm:w-fit  p-4 font-extrabold sm:text-4xl text-3xl">MAKE 2026 YOUR <br class="sm:hidden"> YEAR</h1>
+    <p class="border-4 border-white sm:w-fit w-3/4 sm:p-4 p-2 sm:tracking-wider mb-8 sm:text-2xl text-xl -tracking-wide font-semibold">We offer a range of master’s courses in
+      business and management, allied health, computer science and engineering
+      all available to start in January 2026.</p>
+      
+    <p class="border sm:w-1/2 w-full p-4 flex text-center items-center align-middle mb-4">
+    
+      Discover our <br class="hidden sm:flex">January course <i class="fa-solid fa-angle-right ml-2  items-center text-center"></i>
+    </p>
+  </section>
+  
+  <script src="src/main.js"></script>
 </body>
 
 </html>
