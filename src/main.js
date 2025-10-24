@@ -1,24 +1,26 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
-
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
-
-setupCounter(document.querySelector('#counter'))
+let navDescription = document.getElementById("nav-description");
+let nav = document.getElementById("nav").getElementsByTagName("li");
+let descriptions = [
+  document.getElementById("student"),
+  document.getElementById("student-life"),
+  document.getElementById("research"),
+  document.getElementById("global"),
+  document.getElementById("about"),
+];
+[...nav].map((x) => {
+  x.addEventListener("click", function (e) {
+    [...nav].map((x) => x.classList.remove("bg-white", "text-black"));
+    if (navDescription.open === true) {
+      document.getElementById(e.target.textContent).classList.toggle("hidden");
+      this.classList.remove("bg-white", "text-black");
+      navDescription.close();
+    } else {
+      this.classList.add("bg-white", "text-black");
+      // switch(i){
+      //   case 0
+      // }
+      txt.classList.toggle("hidden");
+      navDescription.show();
+    }
+  });
+});
